@@ -6,8 +6,8 @@ from django.conf import settings
 from django.db import transaction as db_transaction
 from django.shortcuts import get_object_or_404
 
-from zazi.core.utils import generate_id, get_absolute_url
 from zazi.apps.loan.models import LoanAccount
+from zazi.core.utils import generate_id, get_absolute_url
 
 from .. import api
 from ..enums import IdentifierType, ResponseType, AccountType
