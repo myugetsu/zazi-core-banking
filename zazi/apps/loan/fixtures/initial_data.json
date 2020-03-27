@@ -1,0 +1,18 @@
+[
+    {
+        "model": "loan.loanproduct",
+        "pk": 1,
+        "fields": {
+            "created_at": "2020-01-17T13:20:24.001Z",
+            "updated_at": "2020-01-17T13:20:24.001Z",
+            "name": "mpesa_revolving_loan",
+            "product_id": "yxqwsj4phbghg340o46dhb3z",
+            "payment_platform": 1,
+            "product_type": 1,
+            "max_loan_limit": "5000.0000",
+            "interest_method": 1,
+            "interest_rate": 0,
+            "interest_rate_accrual_schedule": 1
+        }
+    }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 1,
+    "fields": {
+      "created_at": "2020-02-10T21:03:12.659Z",
+      "updated_at": "2020-02-10T21:03:12.659Z",
+      "gl_account": 4,
+      "loan_ledger_account": 1,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 2,
+    "fields": {
+      "created_at": "2020-02-10T21:03:35.159Z",
+      "updated_at": "2020-02-10T21:03:35.159Z",
+      "gl_account": 6,
+      "loan_ledger_account": 2,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 3,
+    "fields": {
+      "created_at": "2020-02-10T21:03:54.842Z",
+      "updated_at": "2020-02-10T21:03:54.842Z",
+      "gl_account": 14,
+      "loan_ledger_account": 3,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 4,
+    "fields": {
+      "created_at": "2020-02-10T21:04:08.696Z",
+      "updated_at": "2020-02-10T21:04:08.696Z",
+      "gl_account": 12,
+      "loan_ledger_account": 4,
+      "is_active": false
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 5,
+    "fields": {
+      "created_at": "2020-02-10T21:04:27.045Z",
+      "updated_at": "2020-02-10T21:04:27.045Z",
+      "gl_account": 11,
+      "loan_ledger_account": 5,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 6,
+    "fields": {
+      "created_at": "2020-02-10T21:04:44.924Z",
+      "updated_at": "2020-02-10T21:04:44.924Z",
+      "gl_account": 10,
+      "loan_ledger_account": 6,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 7,
+    "fields": {
+      "created_at": "2020-02-10T21:05:06.817Z",
+      "updated_at": "2020-02-10T21:05:06.818Z",
+      "gl_account": 20,
+      "loan_ledger_account": 7,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 8,
+    "fields": {
+      "created_at": "2020-02-10T21:05:34.426Z",
+      "updated_at": "2020-02-10T21:05:34.426Z",
+      "gl_account": 22,
+      "loan_ledger_account": 8,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 9,
+    "fields": {
+      "created_at": "2020-02-10T21:05:49.939Z",
+      "updated_at": "2020-02-10T21:05:49.939Z",
+      "gl_account": 21,
+      "loan_ledger_account": 9,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 10,
+    "fields": {
+      "created_at": "2020-02-10T21:06:46.410Z",
+      "updated_at": "2020-02-10T21:14:51.923Z",
+      "gl_account": 25,
+      "loan_ledger_account": 10,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 11,
+    "fields": {
+      "created_at": "2020-02-10T21:08:22.472Z",
+      "updated_at": "2020-02-10T21:14:39.504Z",
+      "gl_account": 26,
+      "loan_ledger_account": 11,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 12,
+    "fields": {
+      "created_at": "2020-02-10T21:17:18.551Z",
+      "updated_at": "2020-02-10T21:17:18.551Z",
+      "gl_account": 27,
+      "loan_ledger_account": 12,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 13,
+    "fields": {
+      "created_at": "2020-02-10T21:17:31.798Z",
+      "updated_at": "2020-02-10T21:17:31.798Z",
+      "gl_account": 28,
+      "loan_ledger_account": 13,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccountinglink",
+    "pk": 14,
+    "fields": {
+      "created_at": "2020-03-04T08:28:51.233Z",
+      "updated_at": "2020-03-04T08:28:51.233Z",
+      "gl_account": 29,
+      "loan_ledger_account": 16,
+      "is_active": true
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 1,
+    "fields": {
+      "created_at": "2020-01-29T17:56:21.105Z",
+      "updated_at": "2020-01-29T17:56:21.105Z",
+      "name": "Loan Fund Source",
+      "ledger_code": "100001",
+      "account_category": 1,
+      "account_type": 1,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 2,
+    "fields": {
+      "created_at": "2020-01-29T18:43:28.719Z",
+      "updated_at": "2020-01-29T18:43:28.719Z",
+      "name": "Loan Portfolio Account",
+      "ledger_code": "100002",
+      "account_category": 1,
+      "account_type": 2,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 3,
+    "fields": {
+      "created_at": "2020-01-29T18:43:44.323Z",
+      "updated_at": "2020-01-29T18:45:42.374Z",
+      "name": "Loan Liabilities",
+      "ledger_code": "200001",
+      "account_category": 2,
+      "account_type": 3,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 4,
+    "fields": {
+      "created_at": "2020-01-29T18:46:07.912Z",
+      "updated_at": "2020-01-29T18:46:16.530Z",
+      "name": "Loan Interest Receivable Account",
+      "ledger_code": "100003",
+      "account_category": 1,
+      "account_type": 4,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 5,
+    "fields": {
+      "created_at": "2020-01-29T18:46:39.534Z",
+      "updated_at": "2020-01-29T18:46:39.534Z",
+      "name": "Loan Fees Receivable",
+      "ledger_code": "100004",
+      "account_category": 1,
+      "account_type": 5,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 6,
+    "fields": {
+      "created_at": "2020-01-29T18:46:57.584Z",
+      "updated_at": "2020-01-29T18:46:57.584Z",
+      "name": "Loan Penalties Receivable",
+      "ledger_code": "100005",
+      "account_category": 1,
+      "account_type": 6,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 7,
+    "fields": {
+      "created_at": "2020-01-29T18:47:44.643Z",
+      "updated_at": "2020-01-29T18:48:39.058Z",
+      "name": "Loan Interest Revenue",
+      "ledger_code": "400002",
+      "account_category": 4,
+      "account_type": 7,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 8,
+    "fields": {
+      "created_at": "2020-01-29T18:48:30.562Z",
+      "updated_at": "2020-01-29T18:48:30.562Z",
+      "name": "Loan Penalties Revenue Account",
+      "ledger_code": "400001",
+      "account_category": 4,
+      "account_type": 8,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 9,
+    "fields": {
+      "created_at": "2020-01-29T18:49:13.758Z",
+      "updated_at": "2020-01-29T18:49:13.758Z",
+      "name": "Loan Fees Revenue Account",
+      "ledger_code": "400003",
+      "account_category": 4,
+      "account_type": 9,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 10,
+    "fields": {
+      "created_at": "2020-01-29T18:49:57.895Z",
+      "updated_at": "2020-01-29T18:49:57.895Z",
+      "name": "Principal Write-off Expense Account",
+      "ledger_code": "500001",
+      "account_category": 5,
+      "account_type": 10,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 11,
+    "fields": {
+      "created_at": "2020-01-29T18:50:24.790Z",
+      "updated_at": "2020-01-29T18:50:24.790Z",
+      "name": "Interest Write-off Expense Account",
+      "ledger_code": "500002",
+      "account_category": 5,
+      "account_type": 11,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 12,
+    "fields": {
+      "created_at": "2020-01-29T18:50:49.146Z",
+      "updated_at": "2020-01-29T18:50:49.146Z",
+      "name": "Penalties Write-off Expense Account",
+      "ledger_code": "500003",
+      "account_category": 5,
+      "account_type": 12,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 13,
+    "fields": {
+      "created_at": "2020-01-29T18:51:44.850Z",
+      "updated_at": "2020-01-29T18:51:59.665Z",
+      "name": "Fees Write-off Expense Account",
+      "ledger_code": "500004",
+      "account_category": 5,
+      "account_type": 13,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 14,
+    "fields": {
+      "created_at": "2020-02-18T18:39:25.498Z",
+      "updated_at": "2020-02-18T18:39:25.498Z",
+      "name": "Owner's Capital",
+      "ledger_code": "3000001",
+      "account_category": 3,
+      "account_type": 15,
+      "is_contra": null
+    }
+  },
+  {
+    "model": "loan_ledger.loanledgeraccount",
+    "pk": 16,
+    "fields": {
+      "created_at": "2020-03-04T07:30:33.687Z",
+      "updated_at": "2020-03-04T07:30:33.687Z",
+      "name": "Mpesa Transaction Fees",
+      "ledger_code": "500005",
+      "account_category": 5,
+      "account_type": 14,
+      "is_contra": false
+    }
+  },
+  {
+    "model": "loan_ledger.loanfundsource",
+    "pk": 2,
+    "fields": {
+      "created_at": "2020-02-18T18:39:40.026Z",
+      "updated_at": "2020-02-18T18:45:31.743Z",
+      "fund_source_id": "aljmjimzjuk9bvgknxdyavti",
+      "loan_ledger_account": 1,
+      "bank_account": 3
+    }
+  }  
+]  

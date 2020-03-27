@@ -1,0 +1,74 @@
+[
+{
+  "model": "banking.bank",
+  "pk": 1,
+  "fields": {
+    "created_at": "2019-06-22T05:47:28.212Z",
+    "updated_at": "2019-06-22T05:47:28.212Z",
+    "name": "CBA: Commercial Bank of Africa",
+    "slug": "cba-commercial-bank-of-africa",
+    "logo": ""
+  }
+},
+{
+  "model": "banking.bank",
+  "pk": 2,
+  "fields": {
+    "created_at": "2020-02-18T18:28:17.979Z",
+    "updated_at": "2020-02-18T18:28:17.979Z",
+    "name": "Equity Bank",
+    "slug": "equity-bank",
+    "logo": ""
+  }
+},
+{
+  "model": "banking.bank",
+  "pk": 3,
+  "fields": {
+    "created_at": "2020-02-18T18:28:26.766Z",
+    "updated_at": "2020-02-18T18:28:26.766Z",
+    "name": "Safaricom: Mpesa",
+    "slug": "safaricom-mpesa",
+    "logo": ""
+  }
+},
+{
+  "model": "banking.bankaccount",
+  "pk": 3,
+  "fields": {
+    "created_at": "2020-02-18T18:30:15.392Z",
+    "updated_at": "2020-02-20T19:58:06.675Z",
+    "name": "Safaricom: Mpesa B2C",
+    "bank_account_id": "rs9xbeo4jbansojnuzgluiis",
+    "bank": 3,
+    "gl_ledger_account": 3,
+    "bank_account_type": 1
+  }
+},
+{
+  "model": "banking.bankaccount",
+  "pk": 4,
+  "fields": {
+    "created_at": "2020-02-18T18:30:34.266Z",
+    "updated_at": "2020-02-18T18:30:34.266Z",
+    "name": "Equity Bank",
+    "bank_account_id": "6kwylmuxm7isgofxgrqq4lh1",
+    "bank": 2,
+    "gl_ledger_account": 3,
+    "bank_account_type": 2
+  }
+},
+{
+  "model": "banking.bankaccount",
+  "pk": 5,
+  "fields": {
+    "created_at": "2020-02-18T19:53:56.235Z",
+    "updated_at": "2020-02-20T19:57:55.657Z",
+    "name": "Safaricom: Mpesa C2B",
+    "bank_account_id": "gyze6ykcxtcudtbzrjf0ccno",
+    "bank": 3,
+    "gl_ledger_account": 3,
+    "bank_account_type": 1
+  }
+}
+]
