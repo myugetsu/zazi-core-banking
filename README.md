@@ -6,16 +6,7 @@ Zazi is a minimalistic open-source core/open banking platform, built for develop
 
 ## Quick start
 
-Join the [PostHog Users Slack](https://join.slack.com/t/zaziusers/shared_invite/enQtOTY0MzU5NjAwMDY3LTc2MWQ0OTZlNjhkODk3ZDI3NDVjMDE1YjgxY2I4ZjI4MzJhZmVmNjJkN2NmMGJmMzc2N2U3Yjc3ZjI5NGFlZDQ) if you need help, want to chat, or are thinking of a new feature idea.
-
-## Features
-
-- **Event-based** analytics at a user level - see which users are doing what in your application.
-- **Complete control** over your data - host it yourself.
-- **Automatically capture** clicks and page views to do analyze what your users are doing **retroactively**.
-- Libraries for **[JS](https://github.com/PostHog/zazi/wiki/JS-integration), [Python](https://github.com/PostHog/zazi/wiki/python-integration), [Ruby](https://github.com/PostHog/zazi/wiki/ruby-integration), [Node](https://github.com/PostHog/zazi/wiki/node-integration), [Go](https://github.com/PostHog/zazi/wiki/Go-integration)** + API for anything else.
-- Beautiful **graphs, funnels, user cohorts, user paths and dashboards**.
-- Super easy deploy using **Docker** or **Heroku**.
+Join the [Zazi Users Slack](https://join.slack.com/t/zaziusers/shared_invite/enQtOTY0MzU5NjAwMDY3LTc2MWQ0OTZlNjhkODk3ZDI3NDVjMDE1YjgxY2I4ZjI4MzJhZmVmNjJkN2NmMGJmMzc2N2U3Yjc3ZjI5NGFlZDQ) if you need help, want to chat, or are thinking of a new feature idea.
 
 ## Philosophy
 
@@ -65,6 +56,6 @@ This repo is entirely [MIT licensed](/LICENSE). We charge for things like user p
 ## Contributors
 
 [//]: contributor-faces
-<a href="https://github.com/kanarelo"><img src="https://lh3.googleusercontent.com/-dBP-MEEYWBo/AAAAAAAAAAI/AAAAAAAAAAA/BNaDPKkcWow/s72-c-k/photo.jpg" title="ellmh" width="80" height="80"></a>
+<a href="https://github.com/kanarelo"><img src="https://lh3.googleusercontent.com/-dBP-MEEYWBo/AAAAAAAAAAI/AAAAAAAAAAA/BNaDPKkcWow/s72-c-k/photo.jpg" title="kanarelo" width="60" height="60"></a>
 
 We seriously want to put your face here...
