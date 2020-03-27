@@ -4,10 +4,6 @@
 
 Zazi is a minimalistic open-source core/open banking platform, built for developers, for digital SACCOs and FinTech startups. Automate all your payment needs with our simple to use API.
 
-## Quick start
-
-Join the [Zazi Users Slack](https://join.slack.com/t/zaziusers/shared_invite/enQtOTY0MzU5NjAwMDY3LTc2MWQ0OTZlNjhkODk3ZDI3NDVjMDE1YjgxY2I4ZjI4MzJhZmVmNjJkN2NmMGJmMzc2N2U3Yjc3ZjI5NGFlZDQ) if you need help, want to chat, or are thinking of a new feature idea.
-
 ## Philosophy
 
 Many startups/engineers find it painful to create the backend technology around their payment wallets/gateways in a way it can communicate to Bankers/Financial Analysts as it requires deep banking domain knowledge.
