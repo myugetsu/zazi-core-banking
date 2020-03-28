@@ -2,7 +2,7 @@
 
 # Zazi OpenBanking Platform (Community Edition)
 
-Zazi is a minimalistic open-source core/open banking platform, built for developers, for digital SACCOs and FinTech startups. Automate all your M-Pesa payment needs with our simple to use API.
+Zazi is a minimalistic open-source core/open banking platform, built on top of Django, built for developers, for digital SACCOs and FinTech startups. Automate all your M-Pesa payment needs with our simple to use API.
 
 ## Philosophy
 
@@ -19,6 +19,7 @@ It can be used as a:
 
 Features we want to add:
 1. User management
+2. API Layer (Django Rest Framework)
 2. API Management UI
 3. Financial Reports; {Balance Sheet, PL Statement, General/Loan Journal}
 4. Complete the loan lifecycle
@@ -26,6 +27,17 @@ Features we want to add:
 
 We are aware that alternatives exists; Mojaloop(https://mojaloop.io/), Mifos(https://mifos.org/), Mambu(http://mambu.com/) etc., but most of the alternatives are either too complicated, expensive or do not solve a minimalist's need.
 
+## Architecture
+
+A core banking platform puts at its center the Customer, thus, the tendency to be a CRM, but this is more of a transactional/analytical platform. This platform is meant to interface with other cloud platforms in a Microservices manner.
+
+We put at the center the usefulness of Django settings modules to separate the project into multiple Microservices. 
+
+The various modules/apps bundled at this point are:
+1. *Banking:* {for bank balances, integration with external payment platforms}
+2. *General Ledger:* Keep track of balances of all major modules as the source of truth.
+3. *Identity:* Keep track of the user details collected from various modules under one place.
+4. *Loan:* Keep track of all loan accounts and possible
 
 ## Why ZAZI?
 
