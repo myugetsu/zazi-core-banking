@@ -38,6 +38,13 @@ The various modules/apps bundled at this point are:
 2. *General Ledger:* Keep track of balances of all major modules as the source of truth.
 3. *Identity:* Keep track of the user details collected from various modules under one place.
 4. *Loan:* Keep track of all loan accounts and possible
+5. *Loan Ledger:* An Accounting submodule that builds on top of loans module to track transactions and their resulting effects on the balances.
+6. *Mpesa:* Built on top of mpesa-py(https://github.com/Arlus/mpesa-py/) to provide an interface to M-Pesa payments
+7. *Mpesa Loan:* Builds on top of the Mpesa module and Loan module providing a link between the two modules
+8. *Mpesa Proxy:* Allows you to expose a proxy on the public subnet without exposing the whole zazi instance; redirects the requests to your instance of zazi.
+9. *SMS:* A module to send and receive SMS...
+
+The Architecture is quite solid, leaving you to focus on how to secure it.
 
 ## Why ZAZI?
 
