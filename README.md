@@ -12,7 +12,7 @@ We see this as a niche market to help reach their targets.
 
 Zazi gives you full control over all your users' data, while letting anyone easily perform powerful analytics.
 
-It can be used as a:
+It can be used for:
 1. Mpesa Loans backend (Disbursal & Repayment)
 2. Mpesa Proxy
 3. Digital cash management
