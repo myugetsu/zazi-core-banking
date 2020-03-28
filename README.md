@@ -2,7 +2,7 @@
 
 # Zazi OpenBanking Platform (Community Edition)
 
-Zazi is a minimalistic open-source core/open banking platform, built for developers, for digital SACCOs and FinTech startups. Automate all your payment needs with our simple to use API.
+Zazi is a minimalistic open-source core/open banking platform, built for developers, for digital SACCOs and FinTech startups. Automate all your M-Pesa payment needs with our simple to use API.
 
 ## Philosophy
 
@@ -14,7 +14,7 @@ Zazi gives you full control over all your users' data, while letting anyone easi
 
 ## Why ZAZI?
 
-Zazi is the only <strong>product-focused</strong> open source core banking platform, with a strong focus on Kenyan Payment platforms.
+Zazi is the only <strong>product-focused</strong> open source core banking platform, with a strong focus on M-Pesa.
 
 
 ## Development
