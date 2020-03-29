@@ -89,7 +89,6 @@
         "extends": "dev",
 
         "environment_variables": {
-            "ALLOWED_HOSTS": "w5gfj9oop4.execute-api.us-east-1.amazonaws.com",
             "CSRF_TRUSTED_ORIGINS": "mms.zazi.xxx,api.safaricom.co.ke",
 
             "DEBUG": "False",

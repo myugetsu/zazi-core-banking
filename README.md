@@ -2,7 +2,17 @@
 
 # Zazi OpenBanking Platform (Community Edition)
 
-Zazi is a minimalistic open-source core/open banking platform, built on top of Django, built for developers, for digital SACCOs and FinTech startups. Automate all your M-Pesa payment needs with our simple to use API.
+Zazi is a minimalistic open-source core/open banking platform, built on top of Django, built for developers, for digital SACCOs and FinTech startups. Automate all your payment needs with our simple to use API.
+
+Supported payment providers: 
+M-Pesa 
+
+Proposed payment providers to support: 
+Airtel Money
+T-Kash
+Equitel
+Vooma
+PesaLink
 
 ## Philosophy
 
