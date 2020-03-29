@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 def get_mpesa_webhook_url(url_name, kwargs=None, endpoint=None):
     logger.debug(f'get_mpesa_webhook_url({url_name}, kwargs={kwargs}, endpoint={endpoint})')
 
-    return get_absolute_url(url_name, kwargs=kwargs, endpoint=settings.MPESA_WEBHOOKS_URL)
+    return get_absolute_url(url_name, kwargs=kwargs, endpoint=settings.MPESA_PROXY_URL)
 
 
 def request_b2b_transaction(

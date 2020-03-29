@@ -54,6 +54,7 @@ def book_repayment(loan_transaction):
     def allocate_repayment_amount(loan_transaction, amount):
         """
         Allocate a loan repayment among the various allocation items;
+        
         - Penalty
         - Fees
         - Interest

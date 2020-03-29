@@ -22,6 +22,7 @@ from zazi.core import json
 from .forms import FundLoanBookForm
 from .utils import api
 
+
 @protected_resource
 @require_GET
 @csrf_exempt

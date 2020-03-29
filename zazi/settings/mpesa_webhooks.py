@@ -8,7 +8,7 @@ INSTALLED_APPS += [
     'zazi.apps.mpesa_proxy',
 ]
 
-SITE_DOMAIN = MPESA_WEBHOOKS_URL = config('MPESA_WEBHOOKS_URL', default="", cast=str)
+SITE_DOMAIN = MPESA_PROXY_URL = config('MPESA_PROXY_URL', default="", cast=str)
 API_URL = MPESA_API_URL = config('MPESA_API_URL', default="", cast=str)
 
 try:

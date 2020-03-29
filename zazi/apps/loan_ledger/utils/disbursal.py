@@ -4,13 +4,13 @@ from django.core.exceptions import ObjectDoesNotExist, MultipleObjectsReturned
 from django.db import transaction as db_transaction, models
 from django.utils import timezone
 
-from zazi.apps.users.enums import UserType
+from zazi.apps.general_ledger.enums import EntryType
 from zazi.apps.loan.enums import (
     LoanTransactionType,
     LoanTransactionStatus,
     LoanAllocationItem)
+from zazi.apps.users.enums import UserType
 
-from zazi.apps.general_ledger.enums import EntryType
 
 from ..models import LoanLedgerAccount
 from ..enums import LoanLedgerAccountType
