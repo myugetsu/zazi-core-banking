@@ -1,4 +1,4 @@
--r base.pip
+-r lambda.pip
 
 sqlparse==0.2.4
 

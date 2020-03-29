@@ -14,6 +14,7 @@ Equitel
 Vooma
 PesaLink
 
+
 ## Philosophy
 
 Many startups/engineers find it painful to create the backend technology around their payment wallets/gateways in a way it can communicate to Bankers/Financial Analysts as it requires deep banking domain knowledge.
@@ -61,10 +62,28 @@ The Architecture is quite solid, leaving you to focus on how to secure it.
 Zazi is the only <strong>product-focused</strong> open source core banking platform, with a strong focus on M-Pesa.
 
 
-## Development
+## Development (Mac)
 
 ### Running backend (Django)
-I am looking for some to help me get it running and update this piece here :)
+
+1. Make sure you have python 3 installed `python3 --version`
+2. Make sure you have postgres installed `brew install postgres`
+3. Start postgres, run `brew services start postgresql`
+4. Open `postgres` database:
+```
+CREATE ROLE zazi WITH LOGIN ENCRYPTED PASSWORD 'zazi';
+CREATE DATABASE ZAZI owner zazi;
+ALTER USER tujisort CREATEDB;
+ALTER USER zazi CREATEDB;
+```
+5. Navigate into the correct folder `cd zazi-core-banking`
+6. Run `python3 -m venv env` (creates virtual environment in current direction called 'env')
+7. Run `source env/bin/activate` (activates virtual environment)
+8. Run `pip install -r requirements.txt`. If you have problems with this step (TLS/SSL error), then run `~ brew update && brew upgrade` followed by `python3 -m pip install --upgrade pip`, then retry the requirements.txt install.
+9. Create the environment file; `cp zazi/settings/.env.example zazi/settings/.env`
+9. Run migrations `python3 manage.py migrate`
+10. Run `python3 manage.py runserver`
+
 
 ## Open source / Paid
 
