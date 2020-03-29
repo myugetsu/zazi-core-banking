@@ -1,0 +1,161 @@
+{
+    "dev": {
+        "project_name": "Zazi",
+        "debug": true,
+
+        "lambda_description": "Zazi Project",
+
+        "django_settings": "zazi.settings.development",
+        "aws_region": "us-east-1",
+        "s3_bucket": "zazi-dev-deploy",
+        "timeout_seconds": 70,
+        "memory_size": 128,
+
+        "lets_encrypt_key": "account.key",
+
+        "exclude": [
+            "*.gz", "*.rar", "*.pyc", 
+            "*.sqlite3", ".env",
+            "fixtures/*.json", 
+            "media/*", "logs/*"
+        ],
+
+        "runtime": "python3.6",
+
+        "environment_variables": {
+            "ALLOWED_HOSTS": ".execute-api.us-east-1.amazonaws.com",
+            "DATABASE_URL": "postgres://zazi:zazi@localhost:5432/zazi",
+
+            "DEBUG": "False",
+            
+            "STATIC_URL": "http://zazi-static.s3.amazonaws.com/",
+            "WSGI_APPLICATION": "zazi.wsgi.application",
+
+            "ROOT_URLCONF": "zazi.urls.backend",
+            
+            "AUTH_USER_MODEL": "auth.User",
+            "AWS_REGION_NAME": "us-east-1",
+
+            "HARD_LOAN_LIMIT": 25,
+            "MPESA_REQUESTS_TIMEOUT_SECONDS": "6"
+        },
+
+        "profile_name": "zazi",
+        "vpc_config" : {
+            "SubnetIds": [ 
+                "subnet-xxxxxxxx",
+                "subnet-xxxxxxxx",
+                "subnet-xxxxxxxx"
+            ],
+            "SecurityGroupIds": [ "sg-xxxxxxxxx" ]
+        }
+    },
+
+    
+    "mpesa_proxy": {
+        "extends": "dev",
+        "debug": false,
+
+        "django_settings": "zazi.settings.mpesa_webhooks",
+        "s3_bucket": "zazi-prod-deploy",
+        "timeout_seconds": 50,
+        "memory_size": 128,
+
+        "domain": "proxy.zazi.xxx",
+
+        "environment_variables": {
+            "ALLOWED_HOSTS": "mms.zazi.xxx",
+            "DEBUG": "False",
+
+            "ROOT_URLCONF": "zazi.urls.mpesa",
+            "WSGI_APPLICATION": "zazi.wsgi.application",
+
+            "MPESA_WEBHOOKS_URL": "https://mms.zazi.xxx",
+            "MPESA_API_URL": null
+        }
+    },
+
+    "private": {
+        "debug": false,
+
+        "django_settings": "zazi.settings.production",
+        "s3_bucket": "zazi-prod-deploy",
+        "timeout_seconds": 50,
+        "memory_size": 128,
+
+        "endpoint_configuration": ["PRIVATE"],
+        "apigateway_policy": "apigateway_resource_policy.json",
+
+        "extends": "dev",
+
+        "environment_variables": {
+            "ALLOWED_HOSTS": "w5gfj9oop4.execute-api.us-east-1.amazonaws.com",
+            "CSRF_TRUSTED_ORIGINS": "mms.zazi.xxx,api.safaricom.co.ke",
+
+            "DEBUG": "False",
+            "WSGI_APPLICATION": "zazi.wsgi.application",
+
+            "MPESA_WEBHOOKS_URL": "https://mms.zazi.xxx"
+        }
+    },
+
+    "jobs": {
+        "extends": "private",
+
+        "timeout_seconds": 120,
+        "memory_size": 128,
+
+        "apigateway_enabled": false,
+        "route53_enabled": true,
+
+        "environment_variables": {
+            "DEBUG": "False",
+            "WSGI_APPLICATION": "zazi.wsgi.application",
+
+            "MPESA_WEBHOOKS_URL": "https://mms.zazi.xxx"
+        },
+
+        "events": [
+            {
+                "function": "zazi.apps.loan_ledger.events.update_loan_ledger_balances",
+                "expressions": [
+                    "cron(0 * * * ? *)"
+                ]
+            },
+
+            {
+                "function": "zazi.apps.mpesa_loan.events.process_mpesa_b2c_transaction",
+                "event_source": {
+                     "arn":  "arn:aws:sqs:us-east-1:xxxxxxxxxx:mpesa_b2c_requests",
+                     "batch_size": 1,
+                     "enabled": true
+                }
+            },
+            {
+                "function": "zazi.apps.mpesa_loan.events.process_mpesa_c2b_transaction",
+                "event_source": {
+                     "arn":  "arn:aws:sqs:us-east-1:xxxxxxxxxx:mpesa_c2b_requests",
+                     "batch_size": 1,
+                     "enabled": true
+                }
+            },
+
+            {
+                "function": "zazi.apps.mpesa_loan.events.process_loan_repayment_request",
+                "event_source": {
+                     "arn":  "arn:aws:sqs:us-east-1:xxxxxxxxxx:loan_repayments",
+                     "batch_size": 1,
+                     "enabled": true
+                }
+            },
+            {
+                "function": "zazi.apps.mpesa_loan.events.process_loan_application",
+                "event_source": {
+                     "arn":  "arn:aws:sqs:us-east-1:xxxxxxxxxx:loan_requests",
+                     "batch_size": 1,
+                     "enabled": true
+                }
+            }
+        ]
+    }
+}
