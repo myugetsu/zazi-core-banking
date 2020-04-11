@@ -1,3 +1,0 @@
--r base.pip
-
-gunicorn==19.8.1

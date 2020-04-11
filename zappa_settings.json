@@ -75,7 +75,7 @@
         }
     },
 
-    "private": {
+    "production": {
         "debug": false,
 
         "django_settings": "zazi.settings.production",
@@ -99,7 +99,7 @@
     },
 
     "jobs": {
-        "extends": "private",
+        "extends": "production",
 
         "timeout_seconds": 120,
         "memory_size": 128,
